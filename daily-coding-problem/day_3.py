@@ -26,7 +26,7 @@ class Node:
 
 def serialize(root):
     if not root:
-        return 'none'
+        return str(None)
 
     left = serialize(root.left)
     right = serialize(root.right)
@@ -44,6 +44,5 @@ node = Node('root', Node('left', Node('left.left')), Node('right'))
 # print("('root', ('left', 'left.left', None), ('right', None, None))")
 print(deserialize(serialize(node)))
 
-#
-#
+
 # assert deserialize(serialize(node)).left.left.val == 'left.left'

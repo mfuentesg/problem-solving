@@ -14,3 +14,7 @@ You can assume that the messages are decodable. For example, '001' is not allowe
 2 7 6 23
 2 7 6 2 3
 """
+
+
+def decode(message):
+    pass
