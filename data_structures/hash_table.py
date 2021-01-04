@@ -8,7 +8,6 @@ class Node:
 
 
 class HashTable:
-
     def __init__(self):
         self.capacity = 50
         self.size = 0
