@@ -6,3 +6,13 @@ For example, given the query string de and the set of strings [dog, deer, deal],
 
 Hint: Try preprocessing the dictionary into a more efficient data structure to speed up queries.
 """
+
+
+def finder(items, search):
+    return [item for item in items if item.startswith(search)]
+
+
+elements = ['dog', 'deer', 'deal']
+query = 'de'
+
+print(finder(elements, query))
