@@ -8,6 +8,13 @@ Hint: Try preprocessing the dictionary into a more efficient data structure to s
 """
 
 
+# This should be solved using Trie (Ref: https://cutt.ly/wjZl4U7)
+
+class Trie:
+    def add(self, value):
+        pass
+
+
 def finder(items, search):
     return [item for item in items if item.startswith(search)]
 

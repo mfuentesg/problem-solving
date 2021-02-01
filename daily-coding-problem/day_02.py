@@ -6,13 +6,14 @@ For example, if our input was [1, 2, 3, 4, 5], the expected output would be [120
 input was [3, 2, 1], the expected output would be [2, 3, 6]
 """
 
-items = [1, 2, 3, 4, 5]
-total = 1
-for i in items:
-    total = total * i
 
-result = []
-for i in items:
-    result.append(total // i)
+def solve(items):
+    total = 1
+    for i in items:
+        total = total * i
 
-print(result)
+    return [total // item for item in items]
+
+
+print(solve([1, 2, 3, 4, 5]))
+print(solve([3, 2, 1]))

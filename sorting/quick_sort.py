@@ -1,8 +1,35 @@
-def quick_sort(elements):
-    def internal(items):
-        pass
+def quick_sort(items):
+    def swap(i, j):
+        if i == j:
+            return
+        print('moving from ', i, 'to', j)
+        temp = items[i]
+        items[i] = items[j]
+        items[j] = temp
 
-    return internal(elements)
+    def partition(left, right):
+        pivot = items[right]
+        pointer = left - 1
+
+        for i in range(left, right):
+            if items[i] < pivot:
+                pointer += 1
+                swap(i, pointer)
+
+        swap(pointer + 1, right)
+        return pointer + 1
+
+    def qs(left, right):
+        if left >= right:
+            return
+
+        pi = partition(left, right)
+        qs(left, pi - 1)
+        qs(pi + 1, right)
+
+    qs(0, len(items) - 1)
 
 
-print(quick_sort([500, 2, -2, 200, 60, 5, 0]))
+ll = [10, 80, 30, 90, 40, 50, 70]
+quick_sort(ll)
+print(ll)
