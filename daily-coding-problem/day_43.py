@@ -1,4 +1,6 @@
 """
+Level: Easy
+
 Implement a stack that has the following methods:
 
 push(val), which pushes an element onto the stack

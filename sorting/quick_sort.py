@@ -2,7 +2,6 @@ def quick_sort(items):
     def swap(i, j):
         if i == j:
             return
-        print('moving from ', i, 'to', j)
         temp = items[i]
         items[i] = items[j]
         items[j] = temp

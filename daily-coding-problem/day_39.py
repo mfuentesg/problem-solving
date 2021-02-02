@@ -1,4 +1,6 @@
 """
+Level: Medium
+
 Conway's Game of Life takes place on an infinite two-dimensional board of square cells. Each cell is either dead or
 alive, and at each tick, the following rules apply:
 

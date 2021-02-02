@@ -1,4 +1,6 @@
 """
+Level: Medium
+
 Implement an autocomplete system. That is, given a query string s and a set of all possible query
 strings, return all strings in the set that have s as a prefix.
 
@@ -10,8 +12,12 @@ Hint: Try preprocessing the dictionary into a more efficient data structure to s
 
 # This should be solved using Trie (Ref: https://cutt.ly/wjZl4U7)
 
-class Trie:
-    def add(self, value):
+
+class Node:
+    value = None
+    is_last = False
+
+    def add(self, word):
         pass
 
 

@@ -1,4 +1,6 @@
 """
+Level: Easy
+
 Given a string of round, curly, and square open and closing brackets, return whether the brackets are balanced
 (well-formed).
 
@@ -20,13 +22,20 @@ def is_balanced(string):
 
         bracket = stack.pop()
         conditions = {']': '[', '}': '{', ')': '('}
-        return bracket == conditions.get(c, '')
+        if bracket != conditions.get(c, ''):
+            return False
+
+    if len(stack) != 0:
+        return False
+
     return True
 
 
-print('([])[]({})', is_balanced('([])[]({})'))
-print('([{}])', is_balanced('([{}])'))
-print('([{})', is_balanced('([{])'))
-print(')(', is_balanced('([{])'))
-print('asdf', is_balanced('asdf'))
-print('[]()[{}](())', is_balanced('[]()[{}](())'))
+assert is_balanced('([])[]({})')
+assert is_balanced('([{}])')
+assert is_balanced('[]()[{}](())')
+assert not is_balanced('([{])')
+assert not is_balanced(')(')
+assert not is_balanced('()(')
+assert not is_balanced('asdf')
+

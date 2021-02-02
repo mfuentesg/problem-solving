@@ -1,4 +1,6 @@
 """
+Level: Hard
+
 Implement regular expression matching with the following special characters:
 
 . (period) which matches any single character
