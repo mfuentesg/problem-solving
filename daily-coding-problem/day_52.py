@@ -1,5 +1,5 @@
 """
-Level: Hard
+Difficulty: Hard
 
 Implement an LRU (Least Recently Used) cache. It should be able to be initialized with a cache size n, and contain
 the following methods:

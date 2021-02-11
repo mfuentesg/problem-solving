@@ -1,5 +1,5 @@
 """
-Level: Hard
+Difficulty: Hard
 
 Given an array of integers, find the first missing positive integer in linear time and constant space.
 In other words, find the lowest positive integer that does not exist in the array.
@@ -13,9 +13,13 @@ You can modify the input array in-place.
 
 
 def finder(elements):
+    if len(elements) == 0:
+        return 1
+
     items = dict()
     for index, element in enumerate(elements):
         if element < 1:
+            elements[index] = 0
             continue
         items[element] = index
 
@@ -29,3 +33,4 @@ def finder(elements):
 assert finder([3, 4, -1, 1]) == 2
 assert finder([3, 4, 2, 1]) == 5
 assert finder([1, 2, 0]) == 3
+assert finder([-1, -5]) == 1

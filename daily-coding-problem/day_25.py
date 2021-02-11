@@ -1,5 +1,5 @@
 """
-Level: Hard
+Difficulty: Hard
 
 Implement regular expression matching with the following special characters:
 

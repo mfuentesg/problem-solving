@@ -1,5 +1,5 @@
 """
-Level: Easy
+Difficulty: Easy
 
 Implement a URL shortener with the following methods:
 

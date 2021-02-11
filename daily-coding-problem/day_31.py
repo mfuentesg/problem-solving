@@ -1,5 +1,5 @@
 """
-Level: Easy
+Difficulty: Easy
 
 The edit distance between two strings refers to the minimum number of character insertions, deletions, and substitutions
 required to change one string to the other. For example, the edit distance between “kitten” and “sitting”

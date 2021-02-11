@@ -1,5 +1,5 @@
 """
-Level: Hard
+Difficulty: Hard
 
 Suppose we represent our file system by a string in the following manner:
 
